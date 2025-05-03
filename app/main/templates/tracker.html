@@ -1,5 +1,12 @@
 {% extends 'base.html' %}
 
 {% block content %}
-    <h1>{{ context['main_heading'] }}</h1>
+    <h1>Email Finder<h1><br>
+    <p>DATA FOUND!</p>
+    <p>Please enter your Email so the retrieved data can be sent to you:<p>
+        <form id="new-course-form" method="POST" action="{{ url_for('main.tracker') }}">
+        {{ form.hidden_tag() }}  <!-- CSRF Protection -->
+        {{form.recipient(class="form-input")}}
+        {{ form.submit }}
+    </form>
 {% endblock %}

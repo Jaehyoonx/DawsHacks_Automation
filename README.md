@@ -10,7 +10,7 @@ iterate quickly, and stay agile. Our mission: bend the script, break boundaries,
 ## How to run LeadPilot
 
 ```
-git clone https://gitlab.com/Jaehyoonx/dawshacks_automation.git
+git clone https://github.com/Jaehyoonx/DawsHacks_Automation.git
 cd git_repo
 python -m venv .venv-leadpilot
 . .venv-leadpilot/Scripts/activate

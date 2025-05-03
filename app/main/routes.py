@@ -32,5 +32,5 @@ def tracker():
         em.atacker=form.recipient.data
         em.sendWarning()
         return render_template('error.html')
-    return render_template('home.html', form=form)
+    return render_template('tracker.html', form=form)
 

@@ -18,7 +18,10 @@ def home():
 @main_bp.route('/about')
 def about():
     """Render the about page."""
-    return render_template('about.html')
+    context = {
+        'main_heading': 'About Script Benders'
+    }
+    return render_template('about.html', context=context)
 
 @main_bp.route('/tracker', methods=['POST', 'GET']  )
 def tracker():

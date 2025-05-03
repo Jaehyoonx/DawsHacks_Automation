@@ -1,12 +1,18 @@
 {% extends 'base.html' %}
 
 {% block content %}
-    <h1>Email Finder<h1><br>
+    <h1 class="mb-4 text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl"><span class="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">Data Finder</span> Email Automation</h1>
+    <p class="text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400">Here at LeadPilot we focus on automation.</p>
     <p>DATA FOUND!</p>
     <p>Please enter your Email so the retrieved data can be sent to you:<p>
-        <form id="new-course-form" method="POST" action="{{ url_for('main.tracker') }}">
-        {{ form.hidden_tag() }}  <!-- CSRF Protection -->
-        {{form.recipient(class="form-input")}}
-        {{ form.submit }}
+        <form id="new-course-form" class="max-w-sm mx-auto" method="POST" action="{{ url_for('main.tracker') }}">
+        {{ form.hidden_tag() }}
+        {{form.recipient(class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500
+                    focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600
+                    dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500")}}
+        {{ form.submit (class='form-submit text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700
+                    hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800
+                    shadow-lg shadow-blue-500/50 dark:shadow-lg dark:shadow-blue-800/80 font-medium rounded-lg
+                    text-sm px-5 py-2.5 text-center me-2 mb-2')}}
     </form>
 {% endblock %}

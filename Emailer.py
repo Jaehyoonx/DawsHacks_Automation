@@ -108,7 +108,6 @@ class EmailerSender:
                     <div class='content'>
                         <h1>{title}</h1>
                         <p>{email_message}</p>
-                        <a href='#' class='btn'>Click Here</a>
                     </div>
                 </div>
                 <div class='footer'>
